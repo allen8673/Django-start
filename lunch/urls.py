@@ -20,9 +20,12 @@ from django.contrib import admin
 from stores.views import home
 
 urlpatterns = [
+    path('', home, name='main-view'),
     path('home/', home),
+    path('admin/', admin.site.urls),
 ]
 
 # urlpatterns = [
+#     url(''),
 #     path('admin/', admin.site.urls),
 # ]
